@@ -8,3 +8,6 @@ C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\SqlSugar.dll
 C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\System.Data.SQLite.dll
 C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\log4net.xml
 C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\System.Data.SQLite.xml
+C:\Users\ErricShih\Desktop\ExternalAPI\ExternalAPI\ExternalAPI\ExternalAPI\obj\Debug\ExternalAPI.csprojResolveAssemblyReference.cache
+C:\Users\ErricShih\Desktop\ExternalAPI\ExternalAPI\ExternalAPI\ExternalAPI\obj\Debug\ExternalAPI.dll
+C:\Users\ErricShih\Desktop\ExternalAPI\ExternalAPI\ExternalAPI\ExternalAPI\obj\Debug\ExternalAPI.pdb
