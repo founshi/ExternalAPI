@@ -1,0 +1,10 @@
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\ExternalAPI.dll.config
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\ExternalAPI.dll
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\ExternalAPI.pdb
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\obj\Debug\ExternalAPI.dll
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\obj\Debug\ExternalAPI.pdb
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\log4net.dll
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\SqlSugar.dll
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\System.Data.SQLite.dll
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\log4net.xml
+C:\Users\ErricShih\Desktop\WebService\ExternalAPI\ExternalAPI\bin\System.Data.SQLite.xml
