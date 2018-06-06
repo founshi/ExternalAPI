@@ -20,5 +20,24 @@ namespace APISManager
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            APIList _APIList = new APIList();
+            _APIList.API_SerialKey = Guid.NewGuid().ToString();
+            _APIList.API_Assemble = this.textBox2.Text.Trim();
+            _APIList.API_ClassName = this.textBox4.Text.Trim();
+            _APIList.API_CreateTime = DateTime.Now;
+            _APIList.API_FunctionName = this.textBox5.Text.Trim();
+            _APIList.API_IsUsed = true;
+            _APIList.API_NameSpace = this.textBox3.Text.Trim();
+            _APIList.API_Path = this.textBox1.Text.Trim();
+
+            CoreAPIList _CoreAPIList = new CoreAPIList();
+            _CoreAPIList.AddEntity(_APIList);
+
+            MessageBox.Show("新增完成");
+
+        }
     }
 }

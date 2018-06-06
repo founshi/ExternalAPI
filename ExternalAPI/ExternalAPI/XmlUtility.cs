@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace ExternalAPI
 {
-    public class XmlUtility
+    internal class XmlUtility
     {
         /// <summary>
         /// 将自定义对象序列化为XML字符串

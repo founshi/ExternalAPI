@@ -9,15 +9,17 @@ namespace ExternalAPI
     /// <summary>
     /// DLL层 
     /// </summary>
-    public class ServiceAPIList : IBaseService<APIList>
+    internal class ServiceAPIList : IBaseService<APIList>
     {
         SqlSugarClient db = null;
         public ServiceAPIList()
         {
+            string connstring=ConfigurationManager.ConnectionStrings["dbsqlite"].ConnectionString;
+
             db = new SqlSugarClient(new ConnectionConfig()
             {
-                ConnectionString = ConfigurationManager.ConnectionStrings["dbsqlite"].ConnectionString, //必填
-                DbType = SqlSugar.DbType.Oracle, //必填
+                ConnectionString = connstring, //必填
+                DbType = SqlSugar.DbType.Sqlite, //必填
                 IsAutoCloseConnection = true, //默认false
                 InitKeyType = InitKeyType.Attribute
             }); //默认SystemTable
@@ -25,6 +27,7 @@ namespace ExternalAPI
     
         public ISugarQueryable<APIList> LoadEntities(Expression<Func<APIList, bool>> whereLambda)
         {
+            //var ss = db.Queryable<APIList>().WhereIF(whereLambda != null, whereLambda).ToSql();
             return db.Queryable<APIList>().WhereIF(whereLambda != null, whereLambda);
         }
         public ISugarQueryable<APIList> LoadEntities(Expression<Func<APIList, bool>> whereLambda, Expression<Func<APIList, object>> orderExpression, OrderByType type= OrderByType.Asc)

@@ -17,7 +17,7 @@ namespace APISManager
             db = new SqlSugarClient(new ConnectionConfig()
             {
                 ConnectionString = ConfigurationManager.ConnectionStrings["dbsqlite"].ConnectionString, //必填
-                DbType = SqlSugar.DbType.Oracle, //必填
+                DbType = SqlSugar.DbType.Sqlite, //必填
                 IsAutoCloseConnection = true, //默认false
                 InitKeyType = InitKeyType.Attribute
             }); //默认SystemTable

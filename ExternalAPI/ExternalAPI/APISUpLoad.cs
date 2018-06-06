@@ -7,9 +7,9 @@ using System.Web;
 
 namespace ExternalAPI
 {
-    public static class APISUpLoad
+    internal static class APISUpLoad
     {
-        //可以让后台事务5分钟更新一次
+        //可以让后台事务15分钟更新一次
         private static ConcurrentDictionary<string, APIDicEnitity> _ConcurrentDictionary = new ConcurrentDictionary<string, APIDicEnitity>();
         private static CoreAPIList _CoreAPIList = new CoreAPIList();
 
@@ -54,18 +54,20 @@ namespace ExternalAPI
         /// </summary>
         public static void LoadAPIDicEnititys()
         {
-            var __mlist = _CoreAPIList.LoadEntities(null).Where(t => t.API_IsUsed == true).Select(t => new APIDicEnitity
-              {
-                  API_Assemble = t.API_Assemble,
-                  API_ClassName = t.API_ClassName,
-                  API_FunctionName = t.API_FunctionName,
-                  API_Instance = null,
-                  API_IsUsed = t.API_IsUsed,
-                  API_Method = null,
-                  API_NameSpace = t.API_NameSpace,
-                  API_Path = t.API_Path,
-                  API_SerialKey = t.API_SerialKey
-              }).ToList();
+
+            var __mlist = _CoreAPIList.LoadEntities(t => t.API_IsUsed == true).Select
+                (t => new APIDicEnitity
+                {
+                    API_Assemble = t.API_Assemble,
+                    API_ClassName = t.API_ClassName,
+                    API_FunctionName = t.API_FunctionName,
+                    //API_Instance = null,
+                    API_IsUsed = t.API_IsUsed,
+                    //API_Method = null,//默认值就是NULL
+                    API_NameSpace = t.API_NameSpace,
+                    API_Path = t.API_Path,
+                    API_SerialKey = t.API_SerialKey
+                }).ToList();            
 
             ConcurrentDictionary<string, APIDicEnitity> __ConcurrentDictionary = new ConcurrentDictionary<string, APIDicEnitity>();
             for (int i = 0; i < __mlist.Count; i++)
@@ -78,7 +80,7 @@ namespace ExternalAPI
                 __ConcurrentDictionary.TryAdd(__mlist[i].API_SerialKey, __mlist[i]);
             }
 
-            //_ConcurrentDictionary = null;
+            
             _ConcurrentDictionary = __ConcurrentDictionary;
         }
         #endregion

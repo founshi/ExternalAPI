@@ -6,8 +6,8 @@ using System.Linq.Expressions;
 
 namespace ExternalAPI
 {
-   
-    public  class CoreAPIList: IBaseCore<APIList>
+
+    internal class CoreAPIList : IBaseCore<APIList>
     {
          ServiceAPIList _ServiceAPIList = new ServiceAPIList();
          

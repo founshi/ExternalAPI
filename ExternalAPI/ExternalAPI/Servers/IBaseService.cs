@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ExternalAPI
 {
-    public interface IBaseService<T> where T : class,new()
+    internal interface IBaseService<T> where T : class,new()
     {
         /// <summary>
         /// 加载数据

@@ -18,31 +18,31 @@ namespace ExternalAPI
         [SugarColumn(IsPrimaryKey = true)]
         public string API_SerialKey  { get; set; }
         /// <summary>
-        /// 
+        /// 文件路径
         /// </summary>
         public string API_Path  { get; set; }
         /// <summary>
-        /// 
+        /// 文件名称
         /// </summary>
         public string API_Assemble  { get; set; }
         /// <summary>
-        /// 
+        /// 命名空间
         /// </summary>
         public string API_NameSpace  { get; set; }
         /// <summary>
-        /// 
+        /// 类名
         /// </summary>
         public string API_ClassName  { get; set; }
         /// <summary>
-        /// 
+        /// 方法名
         /// </summary>
         public string API_FunctionName  { get; set; }
         /// <summary>
-        /// 
+        /// 是否可用
         /// </summary>
         public bool API_IsUsed  { get; set; }
         /// <summary>
-        /// 
+        /// 创建时间
         /// </summary>
         public DateTime API_CreateTime  { get; set; }
 }

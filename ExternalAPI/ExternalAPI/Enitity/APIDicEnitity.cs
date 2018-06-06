@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ExternalAPI
 {
-    public class APIDicEnitity
+    internal class APIDicEnitity
     {
         public string API_SerialKey { get; set; }
         public string API_Path { get; set; }

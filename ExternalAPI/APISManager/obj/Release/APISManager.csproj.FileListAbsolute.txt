@@ -1,0 +1,11 @@
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\APISManager.exe.config
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\APISManager.exe
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\APISManager.pdb
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\SqlSugar.dll
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\System.Data.SQLite.dll
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\bin\Release\System.Data.SQLite.xml
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.Form1.resources
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.Properties.Resources.resources
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.csproj.GenerateResource.Cache
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.exe
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.pdb
