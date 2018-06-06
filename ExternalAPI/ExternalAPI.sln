@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAPI", "ExternalAPI\ExternalAPI.csproj", "{45CD4144-4322-49AF-8D7F-AD6C09148DB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APISManager", "APISManager\APISManager.csproj", "{8443BAF8-7C45-4697-B204-AAD5FF051433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAPIS", "ExternalAPIS\ExternalAPIS.csproj", "{DA5E98EB-2F4F-41C0-969C-B58FA705DBAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8443BAF8-7C45-4697-B204-AAD5FF051433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8443BAF8-7C45-4697-B204-AAD5FF051433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8443BAF8-7C45-4697-B204-AAD5FF051433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA5E98EB-2F4F-41C0-969C-B58FA705DBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5E98EB-2F4F-41C0-969C-B58FA705DBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5E98EB-2F4F-41C0-969C-B58FA705DBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5E98EB-2F4F-41C0-969C-B58FA705DBAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

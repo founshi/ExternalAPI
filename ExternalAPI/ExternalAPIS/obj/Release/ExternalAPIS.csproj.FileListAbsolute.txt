@@ -1,0 +1,6 @@
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.dll.config
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.dll
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.pdb
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Release\ExternalAPIS.csprojResolveAssemblyReference.cache
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Release\ExternalAPIS.dll
+H:\GitHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Release\ExternalAPIS.pdb
