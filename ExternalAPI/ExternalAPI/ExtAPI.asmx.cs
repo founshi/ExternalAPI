@@ -191,21 +191,19 @@ namespace ExternalAPI
         {
 
             string AssemblyPath = _APIDicEnitity.API_Path;//dll文件路径,不包含dll文件名称
-            if (!string.IsNullOrEmpty(AssemblyPath))
+            //.或..表示根目录  //都替换成 /  \替换成/
+            AssemblyPath = AssemblyPath.Replace(@"//", @"\");
+            AssemblyPath = AssemblyPath.Replace(@"/", @"\");
+            var _pathArray = AssemblyPath.Split('\\');
+            if ((_pathArray[0] == ".") || (_pathArray[0] == ".."))
             {
-                //.或..表示根目录  //都替换成 /  \替换成/
-                AssemblyPath = AssemblyPath.Replace(@"//", @"\");
-                AssemblyPath = AssemblyPath.Replace(@"/", @"\");
-                var _pathArray = AssemblyPath.Split('\\');
-                if ((_pathArray[0] == ".") || (_pathArray[0] == ".."))
-                {
-                    AssemblyPath = AssemblyPath.Replace(@".\", "");
-                    AssemblyPath = AssemblyPath.Replace(@"..\", "");
+                AssemblyPath = AssemblyPath.Replace(@".\", "");
+                AssemblyPath = AssemblyPath.Replace(@"..\", "");
 
-                    if ((!string.IsNullOrEmpty(AssemblyPath)) && (AssemblyPath.Rigth(1) != @"\")) AssemblyPath = AssemblyPath + @"\";
-                    AssemblyPath = HttpRuntime.BinDirectory + AssemblyPath;
-                }
+                if ((!string.IsNullOrEmpty(AssemblyPath)) && (AssemblyPath.Rigth(1) != @"\")) AssemblyPath = AssemblyPath + @"\";
+                AssemblyPath = HttpRuntime.BinDirectory + AssemblyPath;
             }
+            
             if (string.IsNullOrEmpty(AssemblyPath)) AssemblyPath = HttpRuntime.BinDirectory + AssemblyPath;
             string AssemblyDllPath = AssemblyPath + _APIDicEnitity.API_Assemble;//dll文件全路径,包含后缀名
             if (!System.IO.File.Exists(AssemblyDllPath)) throw new Exception("文件" + AssemblyDllPath+"不存在..");//文件不存在,加载失败
