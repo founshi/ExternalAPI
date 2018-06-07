@@ -1,0 +1,6 @@
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.dll.config
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.dll
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\bin\ExternalAPIS.pdb
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Debug\ExternalAPIS.csprojResolveAssemblyReference.cache
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Debug\ExternalAPIS.dll
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\ExternalAPIS\obj\Debug\ExternalAPIS.pdb

@@ -23,6 +23,7 @@ namespace APISManager
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             APIList _APIList = new APIList();
             _APIList.API_SerialKey = Guid.NewGuid().ToString();
             _APIList.API_Assemble = this.textBox2.Text.Trim();
@@ -39,5 +40,9 @@ namespace APISManager
             MessageBox.Show("新增完成");
 
         }
+
+
+
+       
     }
 }

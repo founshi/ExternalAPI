@@ -9,3 +9,4 @@ C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\R
 C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.csproj.GenerateResource.Cache
 C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.exe
 C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.pdb
+C:\Users\ErricShih\Desktop\MyGetHubSrc\ExternalAPI\ExternalAPI\APISManager\obj\Release\APISManager.csprojResolveAssemblyReference.cache
