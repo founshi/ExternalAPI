@@ -112,11 +112,11 @@ namespace ExternalAPIS
 
         private string CreateRetMessage(Exception ex)
         {
-            RetMessage _RetMessage = new RetMessage();
+            ResponseMessage _RetMessage = new ResponseMessage();
 
             if (null == ex)
             {
-                _RetMessage.RetTitle = RetTitle.Success;
+                _RetMessage.RetTitle = ResponseTitle.Success;
                 _RetMessage.ErrorMessage = string.Empty;
                 _RetMessage.Source = string.Empty;
                 _RetMessage.StackTrace = string.Empty;
@@ -124,7 +124,7 @@ namespace ExternalAPIS
             }
             else
             {
-                _RetMessage.RetTitle = RetTitle.Error;
+                _RetMessage.RetTitle = ResponseTitle.Error;
                 _RetMessage.ErrorMessage = ex.Message;
                 _RetMessage.Source = ex.Source;
                 _RetMessage.StackTrace = ex.StackTrace;

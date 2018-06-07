@@ -62,7 +62,7 @@
     <Compile Include="APISUpLoad.cs" />
     <Compile Include="Enitity\APIList.cs" />
     <Compile Include="Quartz\JobSchedule.cs" />
-    <Compile Include="Enitity\RetValEntity.cs" />
+    <Compile Include="Enitity\ResponseMessage.cs" />
     <Compile Include="Quartz\SchedulerSession.cs" />
     <Compile Include="Servers\CoreAPIList.cs" />
     <Compile Include="ExtAPI.asmx.cs">

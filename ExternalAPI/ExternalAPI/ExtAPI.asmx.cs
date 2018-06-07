@@ -122,7 +122,7 @@ namespace ExternalAPI
         [WebMethod]
         public string ReLoadAPIDicEnititys(string APISerialKey)
         {
-            RetValEntity _RetValEntity = new RetValEntity();
+            ResponseMessage _RetValEntity = new ResponseMessage();
             if (APISerialKey == "")
             {
                 try
@@ -162,11 +162,11 @@ namespace ExternalAPI
         /// <returns></returns>
         private string CreateRetValEntity(Exception ex)
         {
-            RetValEntity _RetValEntity = new RetValEntity();
+            ResponseMessage _RetValEntity = new ResponseMessage();
 
             if (ex == null)
             {
-                _RetValEntity.RetTitle = RetTitle.Success;
+                _RetValEntity.RetTitle = ResponseTitle.Success;
                 _RetValEntity.ErrorMessage = string.Empty;
                 _RetValEntity.Source = string.Empty;
                 _RetValEntity.StackTrace = string.Empty;
@@ -175,7 +175,7 @@ namespace ExternalAPI
             else
             {
 
-                _RetValEntity.RetTitle = RetTitle.Error;
+                _RetValEntity.RetTitle = ResponseTitle.Error;
                 _RetValEntity.ErrorMessage = ex.Message;
                 _RetValEntity.Source = ex.Source;
                 _RetValEntity.StackTrace = ex.StackTrace;

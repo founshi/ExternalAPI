@@ -70,7 +70,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RetMessage.cs" />
+    <Compile Include="ResponseMessage.cs" />
     <Compile Include="StringExt.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="XmlUtility.cs" />
